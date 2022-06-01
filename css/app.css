@@ -41,11 +41,63 @@
 /*! ------------------- 4- INSTRUCTORS ------------------------ */
 
 /*! ------------------- 4- STUDENTS SECTION ------------------------ */
-
+#students img {
+  box-sizing: border-box;
+  width: 70%;
+}
 /*! ------------------- 5- COURSES SECTION ------------------------ */
-
+#courses .nav-link {
+  color: white;
+}
+#courses .nav-link.active {
+  background-color: var(--red);
+}
+/* #courses-button {
+  position: relative;
+}
+#full-stack {
+  display: flex;
+}
+#data-science {
+  display: flex;
+}
+#devops {
+  display: flex;
+} */
 /*! ------------------- 6- CONTACT SECTION ------------------------ */
+#contact i {
+  color: var(--red);
+  font-size: 2rem;
+}
 
 /** ------------------- UP-BUTTON --------------------- */
-
+.up-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.6rem;
+  color: white;
+  font-size: 1.3rem;
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.up-btn:hover {
+  color: yellow;
+}
 /*! -------------------- 7- FOOTER ------------------------ */
+footer {
+  margin-top: 1rem;
+}
+footer i {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+  transition: color 1s;
+}
+footer i:hover {
+  color: var(--red);
+}

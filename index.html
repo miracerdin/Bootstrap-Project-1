@@ -330,3 +330,651 @@
     ></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="body">
+    <!---------------- Navbar------------- -->
+    <nav class="navbar navbar-expand-sm navbar-ligth">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/CLARUSWAY_LOGO.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--------------- Carousel----------------->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/slider1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Popular Education</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/slider2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Successful Future</h1>
+            <p>Some representative placeholder content for the second slide.</p>
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/slider3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Dream Job</h1>
+            <p>Some representative placeholder content for the third slide.</p>
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-------------------ABOUT SECTION ------------------------>
+    <main>
+      <section
+        id="about"
+        class="container bg-light text-danger display-6 text-center mt-3"
+      >
+        <h1>About us</h1>
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <h4>Online Courses</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              modi voluptas beatae natus culpa perferendis nam autem ratione
+              nostrum. Quibusdam?
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <i class="fas fa-headset fa-2x"></i>
+            <h4>Full-time Mentoring</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              modi voluptas beatae natus culpa perferendis nam autem ratione
+              nostrum. Quibusdam?
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h4>Learn yourself</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              modi voluptas beatae natus culpa perferendis nam autem ratione
+              nostrum. Quibusdam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-------------------------------- Instructors------------------------------ -->
+      <section id="instructors" class="container bg-dark p-2">
+        <h1 class="text-danger text-center display-6">OUR INSTRUCTORS</h1>
+        <div class="row g-3 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Josh Ren</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bob Ken</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Jessica Sunny</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Jonny Came</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Osho</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="./img/teacher6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Brandon White</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="socials d-flex justify-content-around">
+                  <i class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-instagram-square fa-2x text-danger"
+                  ></i>
+                  <i class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                  <i
+                    class="fa-brands fa-google-plus-square fa-2x text-danger"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------------- Students----------------------------- -->
+      <section id="students" class="container bg-light pt-3 text-center">
+        <h1 class="text-center display-6 text-danger">OUR STUDENTS</h1>
+        <div
+          class="row d-flex m-4 py-3 justify-content-center align-items-center"
+        >
+          <div class="col-md-6 col-sm-12 mb-4">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati ut dolor dolorem laboriosam accusamus eius beatae
+              doloremque veritatis, blanditiis deserunt illum molestiae nihil.
+              Architecto expedita corporis error ipsam minus dicta.
+            </p>
+            <button class="btn btn-danger">LEARN MORE</button>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <img src="./img/students1.png" alt="students" />
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------- Courses----------------------->
+      <section id="courses" class="container bg-dark p-4">
+        <h2 class="display-6 text-center text-danger">COURSES</h2>
+        <nav class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="fs-images-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#fs-images"
+            type="button"
+            role="tab"
+          >
+            Full-Stack
+          </button>
+
+          <button
+            class="nav-link"
+            id="ds-images-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#ds-images"
+            type="button"
+            role="tab"
+          >
+            Data-Science
+          </button>
+
+          <button
+            class="nav-link"
+            id="devops-images-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#devops-images"
+            type="button"
+            role="tab"
+          >
+            DevOps
+          </button>
+        </nav>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="row g-3">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs1.jpg" title="fs-1">
+                  <img
+                    src="./img/thumbnail/fs1.jpg"
+                    class="img-thumbnail"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs2.jpg" title="fs-2">
+                  <img
+                    src="./img/thumbnail/fs2.jpg"
+                    class="img-thumbnail"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs3.jpg" title="fs-3">
+                  <img
+                    src="./img/thumbnail/fs3.jpg"
+                    class="img-thumbnail"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs4.jpg" title="fs-4">
+                  <img
+                    src="./img/thumbnail/fs4.jpg"
+                    class="img-thumbnail"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="ds-images" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ds1.jpg" title="ds-1">
+                  <img
+                    src="./img/thumbnail/ds1.jpg"
+                    alt="ds-1"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ds2.jpg" title="ds-2">
+                  <img
+                    src="./img/thumbnail/ds2.jpg"
+                    alt="ds-2"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ds3.jpg" title="ds-3">
+                  <img
+                    src="./img/thumbnail/ds3.jpg"
+                    alt="ds-3"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/ds4.jpg" title="ds-4">
+                  <img
+                    src="./img/thumbnail/ds4.jpg"
+                    alt="ds-4"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="devops-images" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/thumbnail/ops1.jpg"
+                  title="ops-1"
+                >
+                  <img
+                    src="./img/thumbnail/ops1.jpg"
+                    alt="ops-1"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/thumbnail/ops2.jpg"
+                  title="ops-2"
+                >
+                  <img
+                    src="./img/thumbnail/ops2.jpg"
+                    alt="ops-2"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/thumbnail/ops3.jpg"
+                  title="ops-3"
+                >
+                  <img
+                    src="./img/thumbnail/ops3.jpg"
+                    alt="ops-3"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <a
+                  data-fslightbox
+                  href="./img/thumbnail/ops4.jpg"
+                  title="ops-4"
+                >
+                  <img
+                    src="./img/thumbnail/ops4.jpg"
+                    alt="ops-4"
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------ Contact----------------------------- -->
+
+      <div id="contact" class="container mt-3">
+        <h2 class="display-6 text-center text-danger">CONTACT</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+          voluptatibus possimus quidem facilis magnam modi nisi ipsam provident
+          doloribus tempora accusamus consequuntur dolorum impedit rem tenetur
+          eaque esse, est vero?
+        </p>
+        <div
+          class="container d-flex p-3 g-5 text-center justify-content-center"
+        >
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa-solid fa-phone fa-2x text-danger"></i>
+              <h4>Telephon</h4>
+              <p><a href="tel:+49 666 657 778">+49 666 657 778</a></p>
+            </div>
+            <div class="col-md-4">
+              <i class="fa-brands fa-whatsapp fa-2x text-danger"></i>
+              <h4>Whatsapp</h4>
+              <p>
+                <a href="https://wa.me/+49(333)444 66 77">+49(333)444 66 77</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <i class="fa-solid fa-envelope fa-2x text-danger"></i>
+              <h4>Email</h4>
+              <p><a href="mailto:info@clarusway">info@clarusway</a></p>
+            </div>
+          </div>
+        </div>
+        <form class="row g-3 text-center">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="col-12">
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="Enter subject"
+            />
+          </div>
+
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Enter Your Comments</label>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <!---------------------- Location---------------------- -->
+      <article id="location" class="container mt-4">
+        <h2 class="display-6 text-danger text-center">LOCATION</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48145.65891833386!2d28.80522316421342!3d41.044861673858215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa53c38a5db77%3A0xe1b6d8f8973f9ff0!2zQmHEn2PEsWxhci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1654112841774!5m2!1str!2str"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </article>
+
+      <!-- UP BUTTON -->
+      <a href="#body" class="up-btn"> <i class="fas fa-arrow-up"></i></a>
+    </main>
+
+    <!------------------ FOOTER --------------------->
+    <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"><i class="fab fa-facebook-f fa-2x g-3"></i></a
+        ><a href="#"><i class="fab fa-youtube fa-2x"></i></a
+        ><a href="#"><i class="fab fa-linkedin fa-2x"></i></a
+        ><a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </article>
+
+      <article class="p-4 h6">&copy; 2022 Copyright by Clarusway</article>
+    </footer>
+    <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
